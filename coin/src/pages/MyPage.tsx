@@ -1,3 +1,3 @@
 export default function Mypage() {
-  return <div>마이이페이지</div>;
+  return <div className="text-red-500 font-bold">Tailwind 적용됨!</div>;
 }

@@ -3,7 +3,7 @@ import back from "../shared/mainBack.svg";
 import phone from "../shared/phone.svg";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { Button } from "../entities/Button";
 interface ContainerProps {
   scaleValue: number;
   scrollY: number;
@@ -131,7 +131,7 @@ const Container = styled.div`
   position: relative;
   z-index: 0;
   overflow-x: hidden;
-  background: linear-gradient(#000000 75%, #032305, #85ff2883);
+  background: linear-gradient(#000000 80%, #201c33eb, #0032a8dd 98%, #021425);
 `;
 
 const Background = styled.div<ContainerProps>`
@@ -171,7 +171,7 @@ const FirstSection = styled.div`
 `;
 const Title = styled.div`
   font-size: 4.3rem;
-  color: rgb(206, 255, 71);
+  color: rgb(0, 102, 255);
   font-weight: 800;
   letter-spacing: -0.4rem;
 `;
@@ -185,22 +185,6 @@ const SubTitle = styled.div`
   align-items: center;
 `;
 
-const Button = styled.div`
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: black;
-  background-color: rgb(206, 255, 71);
-  padding: 1.2rem 3rem;
-  border-radius: 2rem;
-  width: fit-content;
-  letter-spacing: 0;
-  cursor: pointer;
-  box-shadow: 0px 0px 1px 5px rgba(179, 255, 0, 0.746);
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    box-shadow: 0px 5px 1px 5px rgb(255, 208, 0);
-  }
-`;
 const SecondSection = styled.div`
   display: flex;
   flex-direction: row;

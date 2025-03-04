@@ -16,7 +16,7 @@ export default function LoginPage() {
 }
 
 const Container = styled.div`
-  background: linear-gradient(#000000 45%, #032305, #85ff2883);
+  background: #d9d9d9;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,8 +39,8 @@ const LoginContainer = styled.div`
   padding: 2rem;
 `;
 const LoginTitle = styled.div`
-  color: white;
-  font-size: 2rem;
+  color: #000000;
+  font-size: 3rem;
   font-weight: 800;
 `;
 const Input = styled.input`
@@ -59,26 +59,25 @@ const Input = styled.input`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    outline: 4px solid #a9ff98; /* 마우스를 올리면 아웃라인 색이 변경 */
+    outline: 4px solid #008cff;
   }
   &:focus {
-    outline-color: #20ff4d;
+    outline-color: #66adff;
   }
 `;
 
 const Button = styled.div`
   width: 20rem;
   height: 3rem;
-  background-color: #a9ff98;
+  background-color: #00a2ff;
   border-radius: 0.5rem;
   transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 2px solid #a9ff98;
+  outline: 2px solid #b4b4b4;
 
   &:hover {
-    background-color: #20ff4d;
-    outline: 2px solid #20ff4d;
+    background-color: #007bfe;
   }
 `;
